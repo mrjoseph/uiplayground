@@ -12,6 +12,7 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/nobile/stylesheet.css">
 
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
     </head>
@@ -19,11 +20,24 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
-
+<div id="controls" class="border-bottom">
+    <div class="site-title">
+        <h1>Ui:playground,</h1>
+        <span>html5 / css3 / Javascript</span>
+    </div>
+  <ul class="navigation">
+        <li><a href="">page 1</a></li>
+        <li><a href="">page 1</a></li>
+        <li><a href="">page 1</a></li>
+        <li><a href="">page 1</a></li>
+    </ul>   
+</div>
 	<div id="main-container">
-		<ul id="v-scrolling" class="v-scrolling">
+		<ul id="scrollElement" class="v-scrolling">
 			<li class="page01">
-				<h2>Page 1</h2>
+				<div class="inside-container border-bottom">
+                    <h2>Page 1</h2>
+                </div>
 			</li>
 			<li class="page02">
 				<h2>Page 2</h2>
@@ -42,9 +56,9 @@
             </li>
 		<ul>
 	</div>
+        <script src="js/jquery-1.8.0.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
